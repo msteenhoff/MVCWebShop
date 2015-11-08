@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Administrasjon";
+}
+
+<h2>Administrasjon</h2>
+<p>Her administreres nettbutikkens forskjellige databaser. </p>
+<br />
+<p class="text-danger">@ViewBag.Feil</p>
+<p class="text-success">@ViewBag.Melding</p>
+<br />
+<div class="btn-group" role="group" aria-label="...">
+    <a class="btn btn-default btn-primary" href="@Url.Action("Ordreliste")" role="button">Vis Ordreliste</a>
+    <a class="btn btn-default btn-primary" href="@Url.Action("Kundeliste")" role="button">Vis Kundeliste</a>
+    <a class="btn btn-default btn-primary" href="@Url.Action("Produktliste")" role="button">Vis Produktliste</a>
+</div>
+
+
+<div class="table">
+
+
+
+</div>

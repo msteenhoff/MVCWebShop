@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WebShopPage.Model.OrdreLinjeView>
+
+<h2>Ordre @ViewBag.id</h2>
+<table class="table">
+    <tr>
+        <th>
+            Produkt
+        </th>
+        <th>Antall</th>
+        <th>Pris</th>
+        <th>Sum</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.navn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.antall)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pris)
+        </td>
+    </tr>
+}
+    <tr>
+        <td></td>
+        <td>SUM:</td>
+        <td>@ViewBag.Sum</td>
+    </tr>
+
+</table>
+
+<div class="btn-group right" role="group" aria-label="...">
+    <a class="btn btn-default" href="@Url.Action("Ordrehistorikk")" role="button">Tilbake</a>
+</div>

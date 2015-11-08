@@ -1,0 +1,41 @@
+﻿@model WebShopPage.Model.ViewProdukt
+<a href="@Url.Action("Index")" class="breadcrumb">admin</a> / 
+<h4>Bekreft sletting av produkt:</h4>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Navn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Navn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beskrivelse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beskrivelse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pris)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pris)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Slett produkt" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Produktliste")
+        </div>
+    }
+</div>

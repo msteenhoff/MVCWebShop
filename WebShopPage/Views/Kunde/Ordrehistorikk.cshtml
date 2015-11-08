@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebShopPage.Model.OrdreView>
+
+@{
+    ViewBag.Title = "Ordreliste";
+}
+
+<h2>Ordreliste</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ordreId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum)
+        </th>
+        <th>
+            kunde
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ordreId)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.dato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kundenavn)
+            </td>
+            <td>
+                @Html.ActionLink("Detaljer", "OrdreDetaljer", new { id = item.ordreId })
+            </td>
+        </tr>
+    }
+
+</table>

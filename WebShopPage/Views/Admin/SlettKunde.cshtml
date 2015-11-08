@@ -1,0 +1,70 @@
+﻿@model WebShopPage.Model.ViewKunde
+
+<h3>Bekreft sletting av @Model.fornavn @Model.etternavn:</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.kundeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.kundeId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fornavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fornavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.etternavn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.etternavn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tlf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tlf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.postnummer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.postnummer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mail)
+        </dd>
+    </dl>
+</div>
+@using (Html.BeginForm())
+{
+<div class="btn-group" role="group" aria-label="...">
+    <a class="btn btn-default btn-primary" href="@Url.Action("Kundeliste")" role="button">Avbryt</a>
+    <input type="submit" value="Slett" class="btn btn-default btn-primary" href="@Url.Action("Kundeliste")" role="button" />
+
+</div>
+}

@@ -1,0 +1,644 @@
+********** 02.11.2015 23:46:04 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'WebshopContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: RegistrerKunde
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at WebShopPage.DAL.Kundebehandler.RegistrerKunde(Kunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 187
+
+********** 02.11.2015 23:46:47 **********
+Exception Type: System.InvalidOperationException
+Exception: The model backing the 'WebshopContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+Source: RegistrerKunde
+Stack Trace: 
+   at System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   at System.Data.Entity.DbSet`1.Add(TEntity entity)
+   at WebShopPage.DAL.Kundebehandler.RegistrerKunde(Kunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 187
+
+********** 05.11.2015 00:12:55 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:12:57 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:14:10 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:14:56 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:15:03 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:15:12 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:17:50 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:17:54 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p)
+
+********** 05.11.2015 00:20:28 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: The specified parameter type 'WebShopPage.Model.Produkt' is not valid. Only scalar types, such as System.Int32, System.Decimal, System.DateTime, and System.Guid, are supported.
+Parameter name: item
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Core.Objects.ObjectParameterCollection.Add(ObjectParameter item)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateQuery[T](String queryString, ObjectParameter[] parameters)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.BuildFindQuery(WrappedEntityKey key)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.FindInStore(WrappedEntityKey key, String keyValuesParamName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at System.Data.Entity.DbSet`1.Find(Object[] keyValues)
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(Produkt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 58
+
+********** 05.11.2015 00:24:29 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: The specified parameter type 'WebShopPage.Model.ViewProdukt' is not valid. Only scalar types, such as System.Int32, System.Decimal, System.DateTime, and System.Guid, are supported.
+Parameter name: item
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Core.Objects.ObjectParameterCollection.Add(ObjectParameter item)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateQuery[T](String queryString, ObjectParameter[] parameters)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.BuildFindQuery(WrappedEntityKey key)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.FindInStore(WrappedEntityKey key, String keyValuesParamName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at System.Data.Entity.DbSet`1.Find(Object[] keyValues)
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(ViewProdukt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 58
+
+********** 05.11.2015 00:28:59 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: The specified parameter type 'WebShopPage.Model.Produkt' is not valid. Only scalar types, such as System.Int32, System.Decimal, System.DateTime, and System.Guid, are supported.
+Parameter name: item
+Source: LagreProdukt
+Stack Trace: 
+   at System.Data.Entity.Core.Objects.ObjectParameterCollection.Add(ObjectParameter item)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateQuery[T](String queryString, ObjectParameter[] parameters)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.BuildFindQuery(WrappedEntityKey key)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.FindInStore(WrappedEntityKey key, String keyValuesParamName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at System.Data.Entity.DbSet`1.Find(Object[] keyValues)
+   at WebShopPage.DAL.ProduktDAL.LagreProdukt(Produkt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 85
+
+********** 05.11.2015 00:30:02 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: The specified parameter type 'WebShopPage.Model.Produkt' is not valid. Only scalar types, such as System.Int32, System.Decimal, System.DateTime, and System.Guid, are supported.
+Parameter name: item
+Source: LagreProdukt
+Stack Trace: 
+   at System.Data.Entity.Core.Objects.ObjectParameterCollection.Add(ObjectParameter item)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateQuery[T](String queryString, ObjectParameter[] parameters)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.BuildFindQuery(WrappedEntityKey key)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.FindInStore(WrappedEntityKey key, String keyValuesParamName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at System.Data.Entity.DbSet`1.Find(Object[] keyValues)
+   at WebShopPage.DAL.ProduktDAL.LagreProdukt(Produkt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 85
+
+********** 05.11.2015 00:30:12 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: The specified parameter type 'WebShopPage.Model.Produkt' is not valid. Only scalar types, such as System.Int32, System.Decimal, System.DateTime, and System.Guid, are supported.
+Parameter name: item
+Source: LagreProdukt
+Stack Trace: 
+   at System.Data.Entity.Core.Objects.ObjectParameterCollection.Add(ObjectParameter item)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateQuery[T](String queryString, ObjectParameter[] parameters)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.BuildFindQuery(WrappedEntityKey key)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.FindInStore(WrappedEntityKey key, String keyValuesParamName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at System.Data.Entity.DbSet`1.Find(Object[] keyValues)
+   at WebShopPage.DAL.ProduktDAL.LagreProdukt(Produkt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 85
+
+********** 05.11.2015 00:33:41 **********
+Exception Type: System.ArgumentOutOfRangeException
+Exception: The specified parameter type 'WebShopPage.Model.Produkt' is not valid. Only scalar types, such as System.Int32, System.Decimal, System.DateTime, and System.Guid, are supported.
+Parameter name: item
+Source: LagreProdukt
+Stack Trace: 
+   at System.Data.Entity.Core.Objects.ObjectParameterCollection.Add(ObjectParameter item)
+   at System.Data.Entity.Core.Objects.ObjectContext.CreateQuery[T](String queryString, ObjectParameter[] parameters)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.BuildFindQuery(WrappedEntityKey key)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.FindInStore(WrappedEntityKey key, String keyValuesParamName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Find(Object[] keyValues)
+   at System.Data.Entity.DbSet`1.Find(Object[] keyValues)
+   at WebShopPage.DAL.ProduktDAL.LagreProdukt(Produkt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 85
+
+********** 05.11.2015 00:37:35 **********
+Exception Type: System.InvalidOperationException
+Exception: The entity type ViewProdukt is not part of the model for the current context.
+Source: LagreProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.InternalEntityEntry..ctor(InternalContext internalContext, Object entity)
+   at System.Data.Entity.DbContext.Entry[TEntity](TEntity entity)
+   at WebShopPage.DAL.ProduktDAL.EndreProdukt(ViewProdukt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 93
+
+********** 05.11.2015 00:37:42 **********
+Exception Type: System.InvalidOperationException
+Exception: The entity type ViewProdukt is not part of the model for the current context.
+Source: LagreProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.InternalEntityEntry..ctor(InternalContext internalContext, Object entity)
+   at System.Data.Entity.DbContext.Entry[TEntity](TEntity entity)
+   at WebShopPage.DAL.ProduktDAL.EndreProdukt(ViewProdukt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 93
+
+********** 05.11.2015 22:13:28 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:15:38 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:21:31 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:32:04 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:32:49 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:33:08 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:37:59 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 22:58:48 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 05.11.2015 23:04:40 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: RegistrerKunde
+Stack Trace: 
+   at WebShopPage.DAL.Kundebehandler.EndreKundeAdmin(ViewKunde k) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\Kundebehandler.cs:line 238
+
+********** 06.11.2015 00:16:51 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 06.11.2015 00:17:59 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 06.11.2015 00:18:07 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.OrdreViewFraOrdreListe(List`1 list) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 41
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 24
+
+********** 06.11.2015 00:18:13 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.OrdreViewFraOrdreListe(List`1 list) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 41
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 24
+
+********** 06.11.2015 00:20:18 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 06.11.2015 00:23:41 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 06.11.2015 00:25:09 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 06.11.2015 00:25:50 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 06.11.2015 00:29:27 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 13:50:23 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 13:53:44 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 13:55:00 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 13:56:20 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 13:56:46 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(ViewProdukt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 68
+
+********** 07.11.2015 14:05:43 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 14:06:08 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 14:06:40 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 14:06:45 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 14:55:50 **********
+Exception Type: System.Data.Entity.Validation.DbEntityValidationException
+Exception: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+Source: NyttProdukt
+Stack Trace: 
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at WebShopPage.DAL.ProduktDAL.NyttProdukt(ViewProdukt p) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\ProduktDAL.cs:line 68
+
+********** 07.11.2015 15:01:20 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:01:22 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:01:27 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:03:22 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:04:00 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:04:03 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:04:04 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:04:08 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:04:26 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:04:30 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:06:50 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 15:06:57 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 07.11.2015 17:32:41 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 111
+
+********** 07.11.2015 17:32:48 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 111
+
+********** 07.11.2015 17:32:55 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 111
+
+********** 07.11.2015 23:19:58 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 111
+
+********** 08.11.2015 17:37:32 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 29
+
+********** 08.11.2015 17:39:40 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 27
+
+********** 08.11.2015 17:41:12 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 27
+
+********** 08.11.2015 17:46:50 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 27
+
+********** 08.11.2015 17:46:55 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 27
+
+********** 08.11.2015 17:46:56 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 27
+
+********** 08.11.2015 17:53:07 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 33
+
+********** 08.11.2015 17:53:15 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 33
+
+********** 08.11.2015 17:59:57 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentOrdre() in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 36
+
+********** 08.11.2015 18:09:36 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 120
+
+********** 08.11.2015 18:12:13 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 120
+
+********** 08.11.2015 18:12:35 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 120
+
+********** 08.11.2015 18:12:37 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 120
+
+********** 08.11.2015 18:12:38 **********
+Exception Type: System.NullReferenceException
+Exception: Object reference not set to an instance of an object.
+Source: HentEnkeltOrdre
+Stack Trace: 
+   at WebShopPage.DAL.AdminDAL.HentEnkeltOrdre(Int32 ordreid) in C:\Users\Magnus\Documents\Visual Studio 2015\Projects\Oppgave 2\DAL\AdminDAL.cs:line 120
+

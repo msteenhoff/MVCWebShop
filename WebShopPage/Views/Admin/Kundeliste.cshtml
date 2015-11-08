@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebShopPage.Model.Kunde>
+
+@{
+    ViewBag.Title = "Kundeliste";
+}
+
+<h2>Kundeliste</h2>
+<p class="text-danger">@ViewBag.Feil</p>
+<p class="text-success">@ViewBag.Melding</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.kundeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fornavn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.etternavn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.adresse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tlf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.postnummer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.kundeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fornavn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.etternavn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.adresse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tlf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.postnummer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mail)
+        </td>
+        <td>
+            @Html.ActionLink("Detaljer", "EndreKunde", new { id=item.kundeId }) |
+            @Html.ActionLink("Slett", "SlettKunde", new { id=item.kundeId })
+        </td>
+    </tr>
+}
+
+</table>
+
+<a class="btn btn-default btn-primary" href="@Url.Action("NyKunde")" role="button">Ny Kunde</a>

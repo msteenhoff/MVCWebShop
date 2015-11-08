@@ -1,0 +1,79 @@
+﻿@model WebShopPage.Model.ViewKunde
+
+<div>
+    <h3>Bekreft bestillingen: </h3>
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Produktnavn</th>
+                <th>Antall</th>
+                <th>Pris</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in ViewBag.kurv)
+            {
+                <tr>
+                    <th>
+                        @item.navn
+                    </th>
+                    <th>
+                        @item.antall
+                    </th>
+                    <th>
+                        @item.pris
+                    </th>
+                </tr>
+            }
+        </tbody>
+       </table>
+
+        <h4>Sendes til: </h4>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.fornavn)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.fornavn)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.etternavn)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.etternavn)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.adresse)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.adresse)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.tlf)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.tlf)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.postnummer)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.postnummer)
+            </dd>
+        </dl>
+</div>
+<div class="btn-group right" role="group" aria-label="...">
+    <a class="btn btn-default btn-primary" href="@Url.Action("Bestill", "Kurv")" role="button">Bestill</a>
+</div>
+

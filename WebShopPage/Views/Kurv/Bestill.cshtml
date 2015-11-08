@@ -1,0 +1,19 @@
+﻿@model WebShopPage.Model.ViewKunde
+
+<div>
+    <h2>Oppsummering: </h2>
+    <hr />
+
+    @if (ViewBag.OK)
+    {
+        <p class="success">@ViewBag.Melding</p>
+    }
+    else
+    {
+        <p class="danger">@ViewBag.Melding</p>
+        <form action="@Url.Action("VisKurv", "Kurv")">
+            <button type="submit" class="btn btn-default">Tilbake til kurv</button>
+        </form>
+    }
+
+</div>

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebShopPage.Model.KurvProduktView>
+
+<h2>Handlekurv</h2>
+
+<p>
+    Her er din handlekurv, @Session["LoggInnNavn"].
+    @ViewBag.Melding
+</p>
+<table class="table">
+    <tr>
+        <th>Produktnavn</th>
+        <th>Antall</th>
+        <th>Pris</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <th>
+            @Html.DisplayFor(model => item.navn)
+        </th>
+        <th>
+            @Html.DisplayFor(model => item.antall)
+        </th>
+        <th>
+            @Html.DisplayFor(model => item.pris)
+        </th>
+        <th><!--<i class="fa fa-plus-circle"></i>  <i class="fa fa-minus-circle"></i>--></th>
+    </tr>
+}
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+</table>
+
+<div class="btn-group right" role="group" aria-label="...">
+    <a class="btn btn-default btn-primary" href="@Url.Action("SjekkUt", "Kurv")" role="button">Sjekk ut</a>
+</div>

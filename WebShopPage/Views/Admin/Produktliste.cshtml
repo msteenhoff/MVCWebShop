@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebShopPage.Model.ViewProdukt>
+
+@{
+    ViewBag.Title = "Produktliste";
+}
+
+<h2>Produktliste</h2>
+<p class="text-danger">@ViewBag.Feil</p>
+<p class="text-success">@ViewBag.Melding</p>
+<table class="table">
+    <tr>
+        <th>
+            Produkt-ID
+        </th>
+        <th>
+            Navn
+        </th>
+        <th>
+            Beskrivelse
+        </th>
+        <th>
+            Pris
+        </th>
+        <th>Handlinger</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Navn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Navn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Beskrivelse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pris)
+        </td>
+        <td>
+            @Html.ActionLink("Endre", "EndreProdukt", new { id=item.produktId }) |
+            @Html.ActionLink("Slett", "SlettProdukt", new { id=item.produktId })
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    <a class="btn btn-default btn-primary" href="@Url.Action("NyttProdukt")" role="button">Legg til produkt</a>
+</p>

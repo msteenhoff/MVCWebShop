@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNet.Identity
+
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        @{
+            if (Session["Admin"] != null && (bool)Session["Admin"] != false)
+            {
+                <li ><a href="@Url.Action("Index", "Admin")" class="text-danger text-primary"><i class="fa fa-user"></i> Logget inn som administrator </a></li>
+                <li><a href="@Url.Action("LoggUt", "Admin")"><i class="fa fa-times"></i> Logg ut</a></li>
+            }
+            else
+            {
+                if (ViewBag.Innlogget != null)
+                {
+                    if (ViewBag.Innlogget)
+                    {
+                        <li><a href="@Url.Action("Kundeside", "Kunde")"><i class="fa fa-user"></i> @Session["LoggInnNavn"] </a></li>
+                        <li><a href="@Url.Action("VisKurv", "Kurv")"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="@Url.Action("LoggUt", "Kunde")"><i class="fa fa-times"></i></a></li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Registrer", "Registrer", "Kunde", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                        <li>@Html.ActionLink("Logg inn", "LoggInn", "Kunde", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                        <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-lock"></i> Admin</a></li>
+                    }
+                }
+                else
+                {
+                    <li> @Html.ActionLink("Registrer", "Registrer", "Kunde", routeValues: null, htmlAttributes: new { id = "registerLink" }) </li>
+                    <li> @Html.ActionLink("Logg inn", "LoggInn", "Kunde", routeValues: null, htmlAttributes: new { id = "loginLink" }) </li>
+                    <li><a href="@Url.Action("Index", "Admin")"><i class="fa fa-lock"></i> Admin</a></li>
+                }
+            }
+        }
+    </ul>
